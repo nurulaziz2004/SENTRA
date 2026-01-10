@@ -80,3 +80,7 @@ def register_routes(app):
             return jsonify(status="success", message="YOLO updated", **state.yolo_state)
         except Exception as e:
             return jsonify(status="error", message=str(e)), 500
+        
+    @app.route("/")
+    def health():
+        return "OK", 200

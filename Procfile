@@ -1,1 +1,0 @@
-web: python smart_farming_server/app.py

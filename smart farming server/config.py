@@ -33,7 +33,7 @@ os.makedirs(STATIC_DIR, exist_ok=True)
 os.makedirs(YOLO_DIR, exist_ok=True)
 
 # !!! GANTI PATH DATASET KAMU DI SINI !!!
-DATASET_PATH = r"D:\skripsiclone\POT 3\dataset.csv"
+DATASET_PATH = r"D:\skripsiclone\POT 3\smart farming server\dataset.csv"
 
 # ================= MODEL CONFIG =================
 FEATURES = ["suhu", "kelembaban", "kelembaban_tanah", "intensitas_cahaya"]
@@ -44,7 +44,7 @@ LABEL_MAP = {0: "TIDAK SIRAM", 1: "SIRAM"}
 THRESH_SOIL_NEED_WATER = 45.0
 
 # ================= YOLO CONFIG =================
-YOLO_MODEL_PATH = os.path.join(BASE_DIR, "D:\skripsiclone\POT 3\yolov8n_selada.pt")
+YOLO_MODEL_PATH = os.path.join(BASE_DIR, "D:\skripsiclone\POT 3\smart farming server\yolov8n_selada.pt")
 YOLO_CONF = 0.25
 
 # ================= DASHBOARD =================
