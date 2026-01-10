@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["python", "smart_farming_server/app.py"]
+CMD gunicorn smart_farming_server.app:app --bind 0.0.0.0:$PORT
